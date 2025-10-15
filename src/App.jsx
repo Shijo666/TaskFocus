@@ -1,5 +1,5 @@
 import Taskform from "./Components/Taskform";
-import TaskList from "./Components/Tasklist.jsx";
+import Tasklist from "./Components/Tasklist.jsx";
 import Progresstracker from "./Components/Progresstracker";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <h1>Task Focus</h1>
       <p>Our friendly TaskManager</p>
       <Taskform />
-      <TaskList />
+      <Tasklist />
       <Progresstracker />
       <button>Clear all Tasks</button>
     </div>
