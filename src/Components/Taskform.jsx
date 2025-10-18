@@ -13,13 +13,13 @@ export default function Taskform(props) {
         setCategory("general");
     }
     return (
-        <form action="" onSubmit={handlesubmit}>
-            <div>
+        <form action="" onSubmit={handlesubmit} className='task-form'>
+            <div id='inp'>
                 <input type="text" placeholder="Enter the Task" onChange={(e) => setTask(e.target.value)} value={task}/>
                 <button type="submit">Add Task</button>
             </div>
 
-            <div>
+            <div id='btns'>
                 <select name="" id="" onChange={(e) => setPriority(e.target.value)} value={priority}>
                     <option value="high">High</option>
                     <option value="medium">Medium</option>

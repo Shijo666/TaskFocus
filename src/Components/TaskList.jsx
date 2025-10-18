@@ -5,9 +5,9 @@ export default function Tasklist(props) {
     }
 
     return (
-        <ul>
+        <ul className="task-list">
             {props.tasks.map((task, index)=> (
-            <li key={index}>
+            <li key={index} className={task.completed ? "completed": ""}>
                 <div>
                     <span>{task.text}
                     <small>({task.priority} , {task.category})</small>
