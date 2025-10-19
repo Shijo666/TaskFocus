@@ -3,13 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Shijo666.github.io/TaskFocus", 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist" 
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
